@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Mercairsoft</string>
+    <string name="title_activity_menu">MenuActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Configurações</string>
+    <string name="info_sobre">Em versões futuras será implementado a compra de produtos e módulo de pagamento via cartão de crédito.</string>
+</resources>

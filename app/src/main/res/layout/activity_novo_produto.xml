@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.proj.lucas.mercairsoft.Activitys.NovoProdutoActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imgFotoProdutoCadastro"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/addfoto"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/edtProdutoCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Produto"
+            android:inputType="text"
+            android:imeOptions="actionNext"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edtModeloCadastro"
+                android:layout_width="128dp"
+                android:layout_height="wrap_content"
+                android:hint="Modelo"
+                android:inputType="text"
+                android:imeOptions="actionNext"/>
+
+            <EditText
+                android:id="@+id/edtFabricanteCadastro"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:hint="Fabricante"
+                android:inputType="text"
+                android:imeOptions="actionNext"/>
+
+            <EditText
+                android:id="@+id/edtValorCadastro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:hint="Valor R$"
+                android:inputType="text"
+                android:imeOptions="actionNext"/>
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edtDescricaoCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Descrição"
+            android:inputType="textMultiLine"
+            android:imeOptions="actionDone"
+            android:gravity="left" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="right">
+
+            <Button
+                android:id="@+id/btnSalvarProdutoCadastro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="Cadastrar"/>
+
+            <Button
+                android:id="@+id/btnLimparCamposProdutoCadastro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="Limpar"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

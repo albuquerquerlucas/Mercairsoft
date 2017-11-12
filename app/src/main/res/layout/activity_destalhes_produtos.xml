@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.proj.lucas.mercairsoft.Activitys.DestalhesProdutosActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp">
+
+        <ImageView
+            android:id="@+id/imgFotoProdutoDetalhes"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/addfoto"
+            android:background="#82c4c0"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Produto: "
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/nomeProdutoDetalhes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Pistola b-1408"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Fabricante: "/>
+
+            <TextView
+                android:id="@+id/txtFabricanteProdutoDetalhes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Occean Dry "/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:text="Modelo: "/>
+
+            <TextView
+                android:id="@+id/txtModeloProdutoDetalhes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cool dry 245"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Descrição: "/>
+
+        <TextView
+            android:id="@+id/txtDescricaoProdutoDetalhes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="É uma arma leve, de calibre 4.0, funciona muito bem em locais e blá blá blá..."/>
+
+    </LinearLayout>
+</RelativeLayout>
